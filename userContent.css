@@ -1,0 +1,4 @@
+/* ツールチップを非表示にする */
+img:hover::after {
+    display: none !important;
+}

@@ -1,0 +1,21 @@
+.tab-icon-image {
+    display: block !important;   /* 元のアイコンを表示 */
+    visibility: visible !important; /* 非表示にならないようにする */
+    opacity: 1 !important;       /* 透明にならないようにする */
+    z-index: 5 !important;       /* スピーカーアイコンより背面に配置 */
+    position: relative !important; /* 相対位置に設定 */
+    left: -5px !important;       /* アイコンの位置調整 */
+}
+
+/* スピーカーアイコンの調整 */
+.tab-icon-overlay {
+    left: 15px !important;  /* スピーカーアイコンを少し右にずらす */
+    margin-right: 20px !important;
+    /* クリックできないように */
+    pointer-events: none !important;
+}
+
+/* 全画面モードでナビゲーションバーを非表示にする */
+#navigator-toolbox[inFullscreen="true"] {
+    display: none !important;
+}
